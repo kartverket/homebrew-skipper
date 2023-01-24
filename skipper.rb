@@ -9,7 +9,7 @@ class Skipper < Formula
 
   on_macos do
     url "https://github.com/kartverket/skipper/releases/download/v0.0.1/skipper_0.0.1_darwin_all.tar.gz"
-    sha256 "fa27c2838053077d02157cb650196ce8fee23aa3d3af833c4cd75a306f28ef5c"
+    sha256 "fd8a6bd82d79cd3284ee4adccc976af7119f6df51de83dad594264b2a50362bf"
 
     def install
       bin.install "skipper"
@@ -19,7 +19,7 @@ class Skipper < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/kartverket/skipper/releases/download/v0.0.1/skipper_0.0.1_linux_arm64.tar.gz"
-      sha256 "846a7686a9622baac25d012f6d3f5198ebf067a9b5e1c873ec8c41064feb5cb4"
+      sha256 "51ffcfae6dfc510be030013692a71ad8fe300a23ab144bbbf6a7c7e7d0860faa"
 
       def install
         bin.install "skipper"
@@ -27,7 +27,7 @@ class Skipper < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/kartverket/skipper/releases/download/v0.0.1/skipper_0.0.1_linux_amd64.tar.gz"
-      sha256 "0773ffdccf622e528a4d1d0f57f0159c9664ad4b3dbafa658dca50668cddc587"
+      sha256 "678181d88c9d2d01821e0f8bc098634f487148e94c20fd23902efb9af893ca17"
 
       def install
         bin.install "skipper"
